@@ -64,10 +64,11 @@ namespace WpfApp1
         */         //a toto zas pred stopnutie, neskusal som tak nwm.
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            //  Odkomentovat len v pripade nervov !
             //  string kill = "svchost.exe";                                         //Pouzivam len ak chcem aby to bol VIRUS !
             //  System.Diagnostics.Process.Start("taskkill", " /f /im " + kill);     //vypnem vsetky notifikacie haha
-            
-            int lol1 = Convert.ToInt32(slider1.Value);
+       
+            int lol1 = Convert.ToInt32(slider1.Value);                               
             label1.Content = slider2.Value.ToString();
             System.Diagnostics.Process.Start("shutdown", "/s /t " + slider1.Value.ToString());
             int res = Convert.ToInt32(slider1.Value);
